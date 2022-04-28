@@ -1,0 +1,16 @@
+<!ELEMENT estacion (fuente, llegadas, salidas)>
+<!ELEMENT fuente (#PCDATA)>
+<!ATTLIST estacion nombre CDATA #REQUIRED>
+<!ELEMENT llegadas (llegada+)>
+<!ELEMENT salidas (salida+)>
+<!ELEMENT llegada (hora, origen, tren, via)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT origen (imagen)>
+<!ATTLIST origen estacion CDATA #REQUIRED>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT tren (#PCDATA)>
+<!ATTLIST tren codigo CDATA #REQUIRED>
+<!ELEMENT via (#PCDATA)>
+<!ELEMENT salida (hora, destino, tren, via)>
+<!ELEMENT destino (imagen)>
+<!ATTLIST destino estacion CDATA #REQUIRED>
